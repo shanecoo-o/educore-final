@@ -1,17 +1,14 @@
 import { Link } from 'react-router-dom';
 import { GraduationCap, ArrowRight, Shield, Zap, Globe } from 'lucide-react';
+import { SchoolBrand } from '@/components/brand/SchoolBrand';
 
 export default function LandingPage() {
   return (
     <div className="min-h-screen bg-background">
       {/* Header */}
       <header className="flex items-center justify-between px-6 py-4 md:px-12">
-        <div className="flex items-center gap-2.5">
-          <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-primary">
-            <GraduationCap className="h-5 w-5 text-primary-foreground" />
-          </div>
-          <span className="font-heading text-lg font-bold text-foreground">EDUCORE</span>
-        </div>
+        <SchoolBrand variant="compact" size={36} />
+
         <div className="flex items-center gap-3">
           <Link
             to="/login"
@@ -33,16 +30,17 @@ export default function LandingPage() {
         <div className="mx-auto max-w-3xl">
           <div className="mx-auto mb-6 inline-flex items-center gap-2 rounded-full bg-accent px-4 py-1.5 text-xs font-medium text-accent-foreground">
             <Zap className="h-3.5 w-3.5" />
-            Premium Educational Operating System
+            Plataforma digital institucional
           </div>
-          <h1 className="font-heading text-4xl font-extrabold leading-tight text-foreground md:text-6xl">
-            The future of
+          <h1 className="font-display text-4xl font-bold leading-tight text-foreground md:text-6xl">
+            Colégio
             <br />
-            <span className="text-primary">education management</span>
+            <span className="text-primary">Deus Connosco</span>
           </h1>
           <p className="mx-auto mt-5 max-w-xl text-base text-muted-foreground md:text-lg">
-            EDUCORE is a modular, scalable platform that unifies academic experience, financial operations, and institutional intelligence into one seamless product.
+            A plataforma digital do Colégio Deus Connosco reúne o percurso académico, as operações financeiras e a comunicação institucional num único espaço.
           </p>
+
           <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
             <Link
               to="/app"
@@ -81,7 +79,7 @@ export default function LandingPage() {
 
       {/* Footer */}
       <footer className="border-t border-border px-6 py-8 text-center md:px-12">
-        <p className="text-xs text-muted-foreground">© 2025 EDUCORE. All rights reserved.</p>
+        <p className="text-xs text-muted-foreground">© 2025 Colégio Deus Connosco. All rights reserved.</p>
       </footer>
     </div>
   );

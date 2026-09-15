@@ -13,6 +13,7 @@ import {
   LogOut,
 } from 'lucide-react';
 import { cn } from '@/lib/utils';
+import { SchoolBrand } from '@/components/brand/SchoolBrand';
 import type { NavItem } from '@/types/navigation';
 
 const mainNav: NavItem[] = [
@@ -51,19 +52,15 @@ export function AppSidebar({ collapsed, onToggle }: AppSidebarProps) {
     >
       {/* Logo */}
       <div className="flex h-[var(--topbar-height)] items-center gap-3 border-b border-sidebar-border px-4">
-        <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-primary">
-          <GraduationCap className="h-4 w-4 text-primary-foreground" />
-        </div>
-        {!collapsed && (
-          <motion.span
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            className="font-heading text-base font-bold tracking-tight text-sidebar-foreground"
-          >
-            EDUCORE
-          </motion.span>
+        {collapsed ? (
+          <SchoolBrand variant="mark" size={28} className="mx-auto" />
+        ) : (
+          <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
+            <SchoolBrand variant="compact" size={32} />
+          </motion.div>
         )}
       </div>
+
 
       {/* Main navigation */}
       <nav className="flex-1 overflow-y-auto scrollbar-thin px-2 py-3 space-y-1">

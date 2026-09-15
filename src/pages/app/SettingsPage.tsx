@@ -101,7 +101,7 @@ export default function SettingsPage() {
               <LogOut className="h-4 w-4 text-destructive" />
               <div>
                 <p className="text-sm font-medium text-foreground">Sign out</p>
-                <p className="text-xs text-muted-foreground">Sign out of your EDUCORE account</p>
+                <p className="text-xs text-muted-foreground">Sign out of your Colégio Deus Connosco account</p>
               </div>
               <button className="ml-auto rounded-xl border border-destructive/30 px-4 py-2 text-sm font-medium text-destructive hover:bg-destructive/10 transition-colors">Sign Out</button>
             </div>
