@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Libre+Baskerville:wght@400;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -6,75 +6,78 @@
 
 @layer base {
   :root {
-    /* EDUCORE Design System */
-    --font-heading: 'Plus Jakarta Sans', system-ui, sans-serif;
-    --font-body: 'Inter', system-ui, sans-serif;
+    /* Colégio Deus Connosco Design System */
+    --font-heading: 'Manrope', system-ui, sans-serif;
+    --font-body: 'Manrope', system-ui, sans-serif;
+    --font-display: 'Libre Baskerville', Georgia, serif;
 
-    /* Core palette — sage/olive green primary inspired by reference */
-    --background: 60 10% 97%;
-    --foreground: 220 20% 10%;
+    /* Core palette — institutional navy + brand orange on warm neutrals */
+    --background: 40 33% 97%;
+    --foreground: 214 45% 14%;
 
     --card: 0 0% 100%;
-    --card-foreground: 220 20% 10%;
+    --card-foreground: 214 45% 14%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 220 20% 10%;
+    --popover-foreground: 214 45% 14%;
 
-    /* Sage green primary */
-    --primary: 85 25% 35%;
-    --primary-foreground: 60 20% 98%;
+    /* Institutional navy */
+    --primary: 214 78% 20%;
+    --primary-foreground: 0 0% 100%;
 
-    /* Warm light secondary */
-    --secondary: 60 15% 94%;
-    --secondary-foreground: 220 20% 15%;
+    /* Warm neutral secondary */
+    --secondary: 38 25% 94%;
+    --secondary-foreground: 214 45% 16%;
 
-    --muted: 60 10% 95%;
-    --muted-foreground: 220 10% 46%;
+    --muted: 38 20% 95%;
+    --muted-foreground: 214 12% 42%;
 
-    /* Soft sage accent */
-    --accent: 80 20% 90%;
-    --accent-foreground: 85 25% 25%;
+    /* Soft orange accent */
+    --accent: 28 78% 93%;
+    --accent-foreground: 22 70% 30%;
 
     --destructive: 0 72% 51%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 60 10% 90%;
-    --input: 60 10% 90%;
-    --ring: 85 25% 35%;
+    --border: 36 20% 89%;
+    --input: 36 20% 89%;
+    --ring: 214 78% 20%;
 
     --radius: 0.75rem;
 
     /* Extended tokens */
-    --success: 152 60% 40%;
+    --brand-orange: 26 91% 54%;
+    --brand-orange-foreground: 0 0% 100%;
+    --success: 152 60% 36%;
     --success-foreground: 0 0% 100%;
     --warning: 38 92% 50%;
     --warning-foreground: 0 0% 100%;
-    --info: 210 80% 52%;
+    --info: 210 80% 45%;
     --info-foreground: 0 0% 100%;
 
     /* Surfaces */
     --surface-raised: 0 0% 100%;
-    --surface-sunken: 60 10% 95%;
+    --surface-sunken: 38 22% 95%;
     --surface-overlay: 0 0% 100%;
-    --surface-dark: 220 20% 10%;
-    --surface-dark-foreground: 60 20% 98%;
+    --surface-dark: 214 78% 20%;
+    --surface-dark-foreground: 0 0% 100%;
 
     /* Shadows */
-    --shadow-xs: 0 1px 2px 0 hsl(220 20% 10% / 0.03);
-    --shadow-sm: 0 1px 3px 0 hsl(220 20% 10% / 0.04), 0 1px 2px -1px hsl(220 20% 10% / 0.04);
-    --shadow-md: 0 4px 6px -1px hsl(220 20% 10% / 0.05), 0 2px 4px -2px hsl(220 20% 10% / 0.04);
-    --shadow-lg: 0 10px 15px -3px hsl(220 20% 10% / 0.05), 0 4px 6px -4px hsl(220 20% 10% / 0.03);
-    --shadow-card: 0 1px 3px hsl(220 20% 10% / 0.04), 0 0 0 1px hsl(60 10% 90% / 0.6);
+    --shadow-xs: 0 1px 2px 0 hsl(214 45% 14% / 0.03);
+    --shadow-sm: 0 1px 3px 0 hsl(214 45% 14% / 0.05), 0 1px 2px -1px hsl(214 45% 14% / 0.04);
+    --shadow-md: 0 4px 6px -1px hsl(214 45% 14% / 0.06), 0 2px 4px -2px hsl(214 45% 14% / 0.04);
+    --shadow-lg: 0 10px 15px -3px hsl(214 45% 14% / 0.07), 0 4px 6px -4px hsl(214 45% 14% / 0.04);
+    --shadow-card: 0 1px 3px hsl(214 45% 14% / 0.05), 0 0 0 1px hsl(36 20% 89% / 0.7);
 
     /* Sidebar */
     --sidebar-background: 0 0% 100%;
-    --sidebar-foreground: 220 15% 30%;
-    --sidebar-primary: 85 25% 35%;
-    --sidebar-primary-foreground: 60 20% 98%;
-    --sidebar-accent: 80 20% 93%;
-    --sidebar-accent-foreground: 85 25% 25%;
-    --sidebar-border: 60 10% 92%;
-    --sidebar-ring: 85 25% 35%;
+    --sidebar-foreground: 214 18% 32%;
+    --sidebar-primary: 214 78% 20%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 214 45% 94%;
+    --sidebar-accent-foreground: 214 78% 20%;
+    --sidebar-border: 36 20% 91%;
+    --sidebar-ring: 214 78% 20%;
 
     /* Topbar */
     --topbar-height: 3.5rem;
@@ -84,39 +87,42 @@
   }
 
   .dark {
-    --background: 220 20% 7%;
-    --foreground: 60 10% 95%;
-    --card: 220 18% 10%;
-    --card-foreground: 60 10% 95%;
-    --popover: 220 18% 10%;
-    --popover-foreground: 60 10% 95%;
-    --primary: 85 30% 50%;
-    --primary-foreground: 220 20% 7%;
-    --secondary: 220 15% 15%;
-    --secondary-foreground: 60 10% 95%;
-    --muted: 220 15% 15%;
-    --muted-foreground: 220 10% 55%;
-    --accent: 85 15% 18%;
-    --accent-foreground: 85 30% 70%;
-    --destructive: 0 62% 30%;
+    --background: 214 45% 8%;
+    --foreground: 38 30% 95%;
+    --card: 214 40% 11%;
+    --card-foreground: 38 30% 95%;
+    --popover: 214 40% 11%;
+    --popover-foreground: 38 30% 95%;
+    --primary: 26 91% 54%;
+    --primary-foreground: 214 45% 10%;
+    --secondary: 214 30% 16%;
+    --secondary-foreground: 38 30% 95%;
+    --muted: 214 30% 16%;
+    --muted-foreground: 214 12% 62%;
+    --accent: 24 40% 18%;
+    --accent-foreground: 28 90% 70%;
+    --destructive: 0 62% 42%;
     --destructive-foreground: 0 0% 100%;
-    --border: 220 15% 18%;
-    --input: 220 15% 18%;
-    --ring: 85 30% 50%;
-    --surface-raised: 220 18% 12%;
-    --surface-sunken: 220 20% 5%;
-    --surface-dark: 220 20% 4%;
-    --surface-dark-foreground: 60 10% 95%;
-    --sidebar-background: 220 18% 8%;
-    --sidebar-foreground: 60 10% 80%;
-    --sidebar-primary: 85 30% 50%;
-    --sidebar-primary-foreground: 220 20% 7%;
-    --sidebar-accent: 220 15% 14%;
-    --sidebar-accent-foreground: 60 10% 90%;
-    --sidebar-border: 220 15% 15%;
-    --sidebar-ring: 85 30% 50%;
+    --border: 214 25% 19%;
+    --input: 214 25% 19%;
+    --ring: 26 91% 54%;
+    --success: 152 50% 42%;
+    --info: 210 70% 58%;
+    --surface-raised: 214 38% 13%;
+    --surface-sunken: 214 45% 6%;
+    --surface-dark: 214 50% 6%;
+    --surface-dark-foreground: 38 30% 95%;
+    --sidebar-background: 214 45% 9%;
+    --sidebar-foreground: 38 20% 82%;
+    --sidebar-primary: 26 91% 54%;
+    --sidebar-primary-foreground: 214 45% 10%;
+    --sidebar-accent: 214 32% 15%;
+    --sidebar-accent-foreground: 38 25% 92%;
+    --sidebar-border: 214 28% 16%;
+    --sidebar-ring: 26 91% 54%;
   }
 }
+
 
 @layer base {
   * {
