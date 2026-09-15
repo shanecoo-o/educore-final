@@ -10,7 +10,7 @@ export default function LoginPage() {
     <div className="flex min-h-screen items-center justify-center bg-background px-4">
       <div className="w-full max-w-sm animate-fade-in">
         <div className="mb-8 text-center">
-          <SchoolBrand variant="lockup" size={80} className="mx-auto mb-4" />
+          <SchoolBrand variant="mark" size={64} className="mx-auto mb-4" />
           <h1 className="font-heading text-xl font-bold text-foreground">Colégio Deus Connosco</h1>
           <p className="mt-1.5 text-sm text-muted-foreground">Enter your credentials to continue</p>
         </div>
